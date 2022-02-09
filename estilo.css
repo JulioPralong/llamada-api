@@ -1,0 +1,271 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background-image: url(./imagenes/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title{
+    text-align: center;
+    padding: 16px;
+    -webkit-text-stroke: 2px rgb(36, 62, 212);
+    color: rgb(252, 255, 92); 
+    margin-top: -18px;
+}
+
+.pokemonlist{
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    max-width: 800px;
+    margin: auto;
+}
+
+.pokemon{
+    border: 10px groove cadetblue;
+    padding: 10px;
+    background-image: url(./imagenes/fondo1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.button{
+    background-color: rgb(20, 33, 212); 
+    border: 1px solid black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 16px;
+    cursor: pointer;
+    -webkit-text-stroke: 2px rgb(220, 255, 95);
+    color: rgb(46, 71, 214); 
+   
+
+}
+
+.vs{
+    text-align: center;
+    margin: auto;
+    font-size: 32px;
+    -webkit-text-stroke: 2px rgb(94, 39, 246);
+    color: rgb(232, 251, 55); 
+}
+
+img{
+    width: 100%;
+}
+
+.nom{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.title2{
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(43, 11, 185);
+    display: flex;
+    margin-right: auto;
+    margin-left: 30px;
+    margin-top: 15px;
+    font-size: 20px;
+    
+}
+.msj{
+    margin-left: 15px;
+}
+.clim{
+    -webkit-text-stroke: 2px rgb(36, 62, 212);
+    font-size: 20px;
+    border: 2px groove rgb(156, 142, 142);
+    background-image: url(./imagenes/fondo1.jpeg);
+    text-align: center;
+
+}
+
+.button1{
+    background-color: rgb(20, 33, 212); 
+    border: 1px solid black;
+    -webkit-text-stroke: 2px rgb(220, 255, 95);
+    color: rgb(46, 71, 214); 
+    margin-left: 140px;
+   
+}
+
+.envia{
+    background-image: url(./imagenes/Pregunta-Psyduck.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid black;
+    border-radius: 10%;
+}
+ul, ol {
+    list-style:none;
+    margin-left: 100px;
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+    background-color:#f8fb13;
+    color:rgb(79, 36, 235);
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+    border: solid 2px;
+}
+
+.nav li a:hover {
+    background-color:#2016a3;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-120px;
+    top:0px;
+}
+
+#header {
+    margin:auto;
+    width: 500px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+.presen{
+    text-align: center;
+    background-color: yellow ;
+    border: 2px solid blue;
+    width: 1000px;
+    height: 230px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 5%;
+}
+
+.yop{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-left: 220px;
+    margin-top: 10px;
+    border-radius: 100%;
+    border: 2px groove blue;
+    
+}
+
+.presen2{
+    text-align: center;
+    background-color: yellow ;
+    border: 2px solid blue;
+    width: 400px;
+    height: 130px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10%;
+}
+
+.presen3{
+    text-align: center;
+    background-color: rgb(182, 255, 11) ;
+    border: 8px double blue;
+    width: 1000px;
+    height: 230px;
+    margin: auto;
+    padding: 30px;
+    
+}
+
+form {
+    width: 200px;
+    margin: 20px auto;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+}
+
+.poke-card {
+    position: relative;
+    height: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 300px;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: rgb(72, 252, 213);
+    border: 10px double rgb(93, 31, 236);
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5%;
+}
+
+.poke-card::before {
+    content: '';
+    background: radial-gradient(black 33%, transparent 33%);
+    background-size: 3px 3px;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+}
+
+.img-container {
+    position: relative;
+    width: 180px;
+    margin: 10px auto;
+
+}
+
+.poke-stats div {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.poke-types div {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+.poke-img {
+    width: 180px;
+    border-radius: 50%;
+}
+
+p{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    font-weight: bold;
+}
+
